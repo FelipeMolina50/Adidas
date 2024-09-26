@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 1000px;
+    width: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.concept-map {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.concept-branch {
+    display: none;
+    margin-left: 20px;
+    padding-left: 15px;
+    border-left: 2px solid #ccc;
+}
+
+.concept-node {
+    padding: 10px 15px;
+    margin: 5px 0;
+    border-radius: 8px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* Nodo principal */
+.main-node {
+    background-color: #003366;
+    color: white;
+    font-size: 18px;
+}
+
+/* Marketing y Ventas */
+.marketing-node {
+    background-color: #ff6600;
+    color: white;
+}
+
+.marketing-subnode {
+    background-color: #ff8533;
+    color: white;
+}
+
+.marketing-subsubnode {
+    background-color: #ff9966;
+    color: white;
+}
+
+/* Producción */
+.produccion-node {
+    background-color: #0066cc;
+    color: white;
+}
+
+.produccion-subnode {
+    background-color: #3399ff;
+    color: white;
+}
+
+.produccion-subsubnode {
+    background-color: #66b2ff;
+    color: white;
+}
+
+/* Recursos Humanos */
+.rrhh-node {
+    background-color: #33cc33;
+    color: white;
+}
+
+.rrhh-subnode {
+    background-color: #66ff66;
+    color: white;
+}
+
+/* Finanzas */
+.finanzas-node {
+    background-color: #cc0000;
+    color: white;
+}
+
+.finanzas-subnode {
+    background-color: #ff3333;
+    color: white;
+}
+
+/* Innovación y Tecnología */
+.innovacion-node {
+    background-color: #9933ff;
+    color: white;
+}
+
+.innovacion-subnode {
+    background-color: #b366ff;
+    color: white;
+}

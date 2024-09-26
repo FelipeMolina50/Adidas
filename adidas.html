@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa Conceptual de Adidas</title>
+    <link rel="stylesheet" href="adidas.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Mapa Conceptual de la Estructura Organizacional de Adidas</h1>
+        <div id="concept-map">
+            <div class="concept-node main-node" onclick="toggleBranch('adidas')">Adidas</div>
+
+            <div id="adidas" class="concept-branch">
+                <!-- Marketing y Ventas -->
+                <div class="concept-node marketing-node" onclick="toggleBranch('marketing')">Marketing y Ventas</div>
+                <div id="marketing" class="concept-branch">
+                    <div class="concept-node marketing-subnode" onclick="toggleBranch('digital')">Marketing Digital</div>
+                    <div id="digital" class="concept-subbranch">
+                        <div class="concept-node marketing-subsubnode">Especialista en Redes Sociales</div>
+                        <div class="concept-node marketing-subsubnode">SEO Manager</div>
+                        <div class="concept-node marketing-subsubnode">Content Marketing</div>
+                    </div>
+                    <div class="concept-node marketing-subnode">Ventas Online</div>
+                    <div class="concept-node marketing-subnode">Ventas Físicas</div>
+                </div>
+
+                <!-- Producción -->
+                <div class="concept-node produccion-node" onclick="toggleBranch('produccion')">Producción</div>
+                <div id="produccion" class="concept-branch">
+                    <div class="concept-node produccion-subnode" onclick="toggleBranch('diseno')">Diseño de Producto</div>
+                    <div id="diseno" class="concept-subbranch">
+                        <div class="concept-node produccion-subsubnode">Diseñador de Calzado</div>
+                        <div class="concept-node produccion-subsubnode">Diseñador de Ropa</div>
+                    </div>
+                    <div class="concept-node produccion-subnode">Manufactura</div>
+                    <div class="concept-node produccion-subnode">Cadena de Suministro</div>
+                </div>
+
+                <!-- Recursos Humanos -->
+                <div class="concept-node rrhh-node" onclick="toggleBranch('rrhh')">Recursos Humanos</div>
+                <div id="rrhh" class="concept-branch">
+                    <div class="concept-node rrhh-subnode">Reclutamiento</div>
+                    <div class="concept-node rrhh-subnode">Desarrollo de Talento</div>
+                    <div class="concept-node rrhh-subnode">Compensaciones y Beneficios</div>
+                </div>
+
+                <!-- Finanzas -->
+                <div class="concept-node finanzas-node" onclick="toggleBranch('finanzas')">Finanzas</div>
+                <div id="finanzas" class="concept-branch">
+                    <div class="concept-node finanzas-subnode">Contabilidad</div>
+                    <div class="concept-node finanzas-subnode">Tesorería</div>
+                    <div class="concept-node finanzas-subnode">Auditoría Interna</div>
+                </div>
+
+                <!-- Innovación y Tecnología -->
+                <div class="concept-node innovacion-node" onclick="toggleBranch('innovacion')">Innovación y Tecnología</div>
+                <div id="innovacion" class="concept-branch">
+                    <div class="concept-node innovacion-subnode">I+D de Materiales</div>
+                    <div class="concept-node innovacion-subnode">Tecnología Digital</div>
+                    <div class="concept-node innovacion-subnode">Experiencia de Usuario</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="adidas.js"></script>
+</body>
+</html>
