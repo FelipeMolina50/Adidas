@@ -1,119 +1,69 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
 }
 
 .container {
-    background-color: white;
-    border-radius: 10px;
     padding: 20px;
-    max-width: 1000px;
-    width: 100%;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
+    max-width: 1200px;
+    margin: auto;
 }
 
 h1 {
-    font-size: 24px;
+    text-align: center;
     color: #333;
-    margin-bottom: 20px;
 }
 
-.concept-map {
+.concept-node {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #333;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
+}
+
+.main-node {
+    background-color: #1f77b4; /* Azul principal */
+}
+
+.marketing-node {
+    background-color: #ff7f0e; /* Naranja para Marketing */
+}
+
+.produccion-node {
+    background-color: #2ca02c; /* Verde para Producción */
+}
+
+.rrhh-node {
+    background-color: #d62728; /* Rojo para RRHH */
+}
+
+.finanzas-node {
+    background-color: #9467bd; /* Violeta para Finanzas */
+}
+
+/* Colores para subniveles */
+.marketing-subnode, .produccion-subnode, .rrhh-subnode, .finanzas-subnode {
+    background-color: #ffbb78;
+}
+
+.marketing-subsubnode, .produccion-subsubnode, .rrhh-subsubnode, .finanzas-subsubnode {
+    background-color: #ffcc88;
 }
 
 .concept-branch {
     display: none;
     margin-left: 20px;
-    padding-left: 15px;
-    border-left: 2px solid #ccc;
+    background-color: antiquewhite;
 }
 
-.concept-node {
-    padding: 10px 15px;
-    margin: 5px 0;
-    border-radius: 8px;
-    font-weight: bold;
-    text-align: center;
-    cursor: pointer;
+.concept-subbranch {
+    display: none;
+    margin-left: 40px;
 }
 
-/* Nodo principal */
-.main-node {
-    background-color: #003366;
-    color: white;
-    font-size: 18px;
-}
-
-/* Marketing y Ventas */
-.marketing-node {
-    background-color: #ff6600;
-    color: white;
-}
-
-.marketing-subnode {
-    background-color: #ff8533;
-    color: white;
-}
-
-.marketing-subsubnode {
-    background-color: #ff9966;
-    color: white;
-}
-
-/* Producción */
-.produccion-node {
-    background-color: #0066cc;
-    color: white;
-}
-
-.produccion-subnode {
-    background-color: #3399ff;
-    color: white;
-}
-
-.produccion-subsubnode {
-    background-color: #66b2ff;
-    color: white;
-}
-
-/* Recursos Humanos */
-.rrhh-node {
-    background-color: #33cc33;
-    color: white;
-}
-
-.rrhh-subnode {
-    background-color: #66ff66;
-    color: white;
-}
-
-/* Finanzas */
-.finanzas-node {
-    background-color: #cc0000;
-    color: white;
-}
-
-.finanzas-subnode {
-    background-color: #ff3333;
-    color: white;
-}
-
-/* Innovación y Tecnología */
-.innovacion-node {
-    background-color: #9933ff;
-    color: white;
-}
-
-.innovacion-subnode {
-    background-color: #b366ff;
-    color: white;
+.concept-subsubsubbranch {
+    display: none;
+    margin-left: 60px;
 }
